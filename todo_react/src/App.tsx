@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    axios.get("localhost:8081").then((response) => {
+    axios.get("http://localhost:8081/test").then((response) => {
       console.log(response)
     })
   }, [])
